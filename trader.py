@@ -3,7 +3,7 @@ from get_stock_info import get_stock_info
 from collections import deque
 from log_config import get_logger
 
-logger = get_logger(__name__)
+logger = get_logger('trader')
 
 frames = deque()
 
