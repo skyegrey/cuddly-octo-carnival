@@ -1,13 +1,14 @@
 from get_stock_info import get_stock_info
 
 from collections import deque
-import logging
+from log_config import get_logger
 
-logging.basicConfig(level=logging.INFO)
+logger = get_logger(__name__)
+
 frames = deque()
 
-for i in range(10):
-    frames.appendleft(get_stock_info('MSFT'))
-    print(frames)
+# for i in range(10):
+#     frames.appendleft(get_stock_info('MSFT'))
+#     print(frames)
 
 
