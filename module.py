@@ -6,4 +6,5 @@ class Module:
         self.activation = activation
 
     def calculate(self):
-        return self.activation(module_input * weight for module_input, weight in zip(self.module_inputs, self.weights))
+        return self.activation(module_input.calculate() * weight for module_input, weight in
+                               zip(self.module_inputs, self.weights))
